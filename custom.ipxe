@@ -4,9 +4,8 @@
 ###
 
 :start
-echo Hello world!
-sleep 10
-goto custom_exit
+chain https://us-east.manta.joyent.com/bbennett/public/xyz/smartos.ipxe || goto custom_exit
 
 :custom_exit
-exit 0
+chain utils.ipxe
+exit
