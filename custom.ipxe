@@ -3,8 +3,18 @@
 ### netboot.xyz-custom menu
 ###
 
+#
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+#
+
+#
+# Copyright 2020 Joyent, Inc.
+#
+
 :start
-chain https://us-east.manta.joyent.com/bbennett/public/xyz/smartos.ipxe || goto custom_exit
+chain https://netboot.joyent.com/smartos.ipxe || goto custom_exit
 
 :custom_exit
 chain utils.ipxe
