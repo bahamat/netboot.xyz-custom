@@ -17,5 +17,4 @@
 chain https://netboot.joyent.com/smartos.ipxe || goto custom_exit
 
 :custom_exit
-chain utils.ipxe
 exit
