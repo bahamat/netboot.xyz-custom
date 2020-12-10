@@ -14,7 +14,7 @@
 #
 
 :start
-chain https://netboot.joyent.com/smartos.ipxe || goto custom_exit
+chain https://netboot.joyent.com/test.ipxe || goto custom_exit
 
 :custom_exit
 exit
